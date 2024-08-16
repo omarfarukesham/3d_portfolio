@@ -35,6 +35,10 @@ import {
       title: "Work",
     },
     {
+      id: "experience",
+      title: "Experience",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
