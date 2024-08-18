@@ -19,9 +19,10 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Omar</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I develop interactive user <br className='sm:block hidden' />
+            interfaces and web applications.
           </p>
+          <button style={{ cursor: 'pointer !important' }} className="bg-[#915EFF] text-white rounded px-2 py-1 mt-2 hover:bg-blue-500">Hire Me</button>
         </div>
       </div>
 

@@ -19,7 +19,7 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    carrent, 
     jobit,
     tripguide,
     threejs,
@@ -33,10 +33,6 @@ import {
     {
       id: "work",
       title: "Work",
-    },
-    {
-      id: "experience",
-      title: "Experience",
     },
     {
       id: "contact",
@@ -120,11 +116,11 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Software Developer",
+      company_name: "Alpha Commerz Ltd",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Step 2022 - Continue",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -134,43 +130,31 @@ import {
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
+      company_name: "USA Client",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2022 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining Mobile App by using React Native, Expo cli and other related technologies.",
+        "Collaborating with individul client, designers, product managers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Web Developer(Intern)",
+      company_name: "Goinnovior IT Solution",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jun 2022 - Step 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and Design client template by using HTML, CSS and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+   
   ];
   
   const testimonials = [

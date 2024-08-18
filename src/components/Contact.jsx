@@ -16,6 +16,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [modal, setModal] = useState({ isOpen: false, message: "", type: "" });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -33,21 +34,25 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_95c68dc', //service-id
+        'template_94c54sg', // template-id
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Omar JS Dev",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "omarfarukesham@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'Vz8fYMrvgXWsq52ow' //public key
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setModal({
+            isOpen: true,
+            message: "Thank you. I will get back to you as soon as possible.",
+            type: "success",
+          });
 
           setForm({
             name: "",
@@ -57,17 +62,17 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          setModal({
+            isOpen: true,
+            message: "Ahh, something went wrong. Please try again.",
+            type: "error",
+          });
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -85,6 +90,7 @@ const Contact = () => {
             <input
               type='text'
               name='name'
+              required
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
@@ -96,6 +102,7 @@ const Contact = () => {
             <input
               type='email'
               name='email'
+              required
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
@@ -109,6 +116,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
+              required
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
@@ -129,6 +137,25 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {modal.isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className={`p-8 rounded-2xl shadow-lg text-center ${modal.type === "success" ? "bg-white" : "bg-white"}`}>
+            <h3 className="text-black text-lg font-bold mb-4">{modal.type === "success" ? "Email Sent" : "Error"}</h3>
+            <p className="text-black mb-6">{modal.message}</p>
+            <button
+              className="bg-tertiary py-2 px-6 rounded-xl text-white font-bold"
+              onClick={() => setModal({ isOpen: false, message: "", type: "" })}
+            >
+              Close
+            </button>
+          </div>
+          <div
+            className="fixed inset-0 bg-black opacity-50"
+            onClick={() => setModal({ isOpen: false, message: "", type: "" })}
+          ></div>
+        </div>
+      )}
     </div>
   );
 };
