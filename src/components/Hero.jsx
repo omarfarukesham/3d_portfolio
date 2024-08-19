@@ -2,9 +2,11 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Tooltip } from 'react-tooltip'
 
 const Hero = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
   const handleHireBtn = () => {
     setIsOpenModal(true);
@@ -108,13 +110,23 @@ const Hero = () => {
            </span>
          </address>
          <div className="mt-5">
-          
+         {isTooltipVisible && (
+                      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2  bg-gray-200 text-black text-xs rounded py-1 px-2">
+                        Download Resume
+                      </div>
+                    )}
+        <div>
+      
+        </div>
            <button
              onClick={handleDownloadResume}
-             className="bg-[#915EFF] px-4 py-1 rounded my-2 hover:bg-blue-500 text-white text-sm transition duration-500"
+             onMouseEnter={() => setIsTooltipVisible(true)}
+             onMouseLeave={() => setIsTooltipVisible(false)}
+             className="bg-[#915EFF] px-4 py-1 rounded my-2 hover:bg-gray-300 hover:text-black text-white text-sm transition duration-500"
            >
              Resume
            </button>
+           
          </div>
        </div>
      </div>
