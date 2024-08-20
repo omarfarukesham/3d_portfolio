@@ -44,14 +44,14 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("1", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        <strong>As a dedicated JavaScript software developer with over 2 years of experience</strong>, I specialize in creating dynamic and scalable web applications. My expertise lies in building microservice-based e-commerce solutions, where I have successfully contributed to the development of <strong>12 individual services</strong>. I have a strong command of <strong>React.js, Next.js, and TypeScript</strong>, which I leverage to deliver seamless and efficient user experiences.
+        <br /><br />
+        In addition to front-end development, I am proficient in using <strong>Git and Bitbucket</strong> for version control, enabling efficient collaboration and code management across teams. My workflow often involves <strong>Jira</strong> for project management, where I track tasks, manage sprints, and ensure timely delivery of features. I also utilize <strong>Figma</strong> for UI/UX design collaboration and <strong>Swagger</strong> for API documentation, ensuring clear communication and smooth integration between different services.
+        <br /><br />
+        My experience extends to deployment processes, where I ensure that applications are reliably delivered to production environments. I am passionate about writing clean, maintainable code and am committed to continuous learning and improvement. I thrive in collaborative environments and am eager to bring my skills to innovative projects that challenge me to grow as a developer.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
