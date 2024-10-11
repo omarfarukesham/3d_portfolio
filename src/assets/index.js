@@ -33,6 +33,9 @@ import uk from './company/uk.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import project1 from './company/project1.png';
+import project2 from './company/project2.jpg';
+import project3 from './company/project3.jpg'
 
 export {
   logo,
@@ -66,5 +69,8 @@ export {
   om,
   ds_legend,
   saudi,
-  uk
+  uk, 
+  project1,
+  project2,
+  project3
 };
