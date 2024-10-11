@@ -27,6 +27,8 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import ds_legend from './company/ds_legend.png'
+import saudi from './company/saudi.png';
+import uk from './company/uk.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -62,5 +64,7 @@ export {
   jobit,
   tripguide,
   om,
-  ds_legend
+  ds_legend,
+  saudi,
+  uk
 };

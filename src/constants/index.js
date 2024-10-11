@@ -18,6 +18,8 @@ import {
     meta,
     starbucks,
     tesla,
+    saudi,
+    uk,
     shopify,
     ds_legend,
     carrent, 
@@ -140,6 +142,30 @@ import {
         "Collaborating with individul client, designers, product managers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         
+      ],
+    },
+    {
+      title: "Web Automation",
+      company_name: "UK Client",
+      icon: uk,
+      iconBg: "#E6DEDD",
+      date: "August 2024 - Continue(PartTime)",
+      points: [
+        "Driving Slot Boking",
+        "Automatic Form Fillup.",
+        "Continus monitoring for opening slot",
+      ],
+    },
+    {
+      title: "Company Website",
+      company_name: "Saudi Arabia Client",
+      icon: saudi,
+      iconBg: "#E6DEDD",
+      date: "August 2024 - Continue(PartTime)",
+      points: [
+        "Company Website",
+        "CMS manage from admin dashboard",
+        "Website performace optimization",
       ],
     },
     {
