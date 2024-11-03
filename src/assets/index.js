@@ -36,6 +36,7 @@ import tripguide from "./tripguide.png";
 import project1 from './company/project1.png';
 import project2 from './company/project2.jpg';
 import project3 from './company/project3.jpg'
+import devOmar from './company/devOmar.png'
 
 export {
   logo,
@@ -72,5 +73,6 @@ export {
   uk, 
   project1,
   project2,
-  project3
+  project3,
+  devOmar,
 };
