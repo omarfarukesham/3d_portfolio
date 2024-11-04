@@ -57,7 +57,7 @@ const Hero = () => {
         <img
           src={devOmar}
           className="w-full sm:w-auto h-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 
-                    sm:bg-[#d9cef5] sm:border-[#915EFF] sm:border-[5px] border-0 rounded-lg"
+                    sm:border-[#915EFF] sm:green-pink-gradient sm:border-[5px]  rounded-lg"
           alt="Omar_hero_image"
         />
       </div>
